@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/all.min.css"/>
+	<link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>DASHBOARD</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+           <!--offcanvas trigger-->
+            <button class="navbar-toggler me-1" type="button" 
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+               aria-controls="offcanvasExample">
+               <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample">
+                <i class="fa-solid fa-bars"></i> </span> 
+            </button>
+            <!---offcanvs-trigger-->
+          <a class="navbar-brand fw-bold text-uppercase me-auto pb-3" href="#"><i class="bi bi-star pe-3 ps-3"></i>aya mahdi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex ms-auto m-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                  </div>
+                   </form>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-chat-dots-fill"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                    <h6 class="text-center text-capitalize p-2 mb-2">you have 6 new messages</h6>
+                             <div class="messages">
+                      <li  data-spy="scroll"><a class="dropdown-item " href="#"><img src="icon2.png" class="me-2">aya mahdy
+                        <h6 class="ms-5 text-muted">how are you?</h6></a></li>
+                      <li><a class="dropdown-item" href="#"><img src="icon.png" class="me-2">mohamed ahmed
+                        <h6 class="ms-5 text-muted">you have done great</h6></a></li>
+                        <li><a class="dropdown-item" href="#"><img src="icon3.jpeg" class="me-2">ahmed soliman
+                          <h6 class="ms-5 text-muted">ready for next task?</h6></a></li>
+                          <li><a class="dropdown-item" href="#"><img src="icon2.png" class="me-2">aya mahdy
+                            <h6 class="ms-5 text-muted">how are you?</h6></a></li>
+                          <li><a class="dropdown-item" href="#"><img src="icon.png" class="me-2">mohamed ahmed
+                            <h6 class="ms-5 text-muted">you have done great</h6></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="icon3.jpeg" class="me-2">ahmed soliman
+                              <h6 class="ms-5 text-muted">ready for next task?</h6></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </div>
+                      <li class="last-message"><a class="dropdown-item" href="#">see all messages
+                        <span class=" ms-5"><i class="bi bi-chevron-right"></i></span></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-bell-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end notifications">
+                      <h6 class="text-center text-capitalize p-2 mb-2">you have 4 notification</h6>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-person-plus px-2  me-3"></i>you have a new user sign in
+                            <h6 class="ms-5 text-muted">5 minutes ago</h6></a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-heart-fill me-3 px-2"></i>user c reacted to your app
+                            <h6 class="ms-5 text-muted">15 minutes ago</h6></a></li>
+                           <li><a class="dropdown-item" href="#"><i class="bi bi-chat-fill me-3 px-2"></i>user a commented on admin
+                            <h6 class="ms-5 text-muted">30 minutes ago</h6></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="icon2.png" class="me-2">aya sent a message yo you
+                            <h6 class="ms-5 text-muted">32 minutes ago</h6></a></li>
+                            <li><a class="dropdown-item text-center text-capitalize" href="#">see all notifications                 
+                                 <span class=" ms-5"><i class="bi bi-chevron-right"></i></span>
+                            </a></li></ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">sign up</a></li>
+                      <li><a class="dropdown-item" href="#">log in</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">help</a></li>
+                    </ul>
+                  </li>
+          </div>
+        </div>
+      </nav>
+      <!--sidebar section off canvas-->
+  <div class="offcanvas offcanvas-start sidebar-nav text-white" 
+      tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-body p-0">
+          <nav class="navbar-dark">
+            <ul class="navbar-nav">
+                <li><div class="text-muted fw-bold text-uppercase small ps-3 ms-2 mt-5 pt-3 mb-3 pb-3">core</div></li>
+                <li><a href="#" class="px-3"><span class="me-2"><i class="bi bi-house-door-fill"></i></span>
+                <span>HOME</span></li>
+                <li class="my-4">
+                    <hr class="dropdown-divider"/>
+                </li>
+                <li><div class="text-muted fw-bold text-uppercase small px-2  pt-3 pb-3">interface</div></li>
+                   <li> <a class="nav-link px-3 sidebar-link mb-3" 
+                    data-bs-toggle="collapse" 
+                    href="#collapseExample" 
+                    role="button" aria-expanded="false" 
+                    aria-controls="collapseExample">
+                   <span class="me-2"><i class="bi bi-layout-sidebar"></i></span> 
+                   <span>layout</span>
+                   <span class="right-icon ms-auto"><i class="bi bi-chevron-down"></i></span>
+                  </a>
+                  <div class="collapse" id="collapseExample">
+                    <div class="">
+                        <ul class="navbar-nav ps-3">
+                            <li><a href="#" class="nav-link px-3"><span class="me-2"><i class="bi bi-layout-sidebar"></i></span> 
+                                <span>nested layout</span></a></li></ul></div>
+                             </div></li>
+                  <li class="pb-3"><span class="me-2 px-3"><i class="bi bi-file-earmark-fill "></i></span><a href="#">pages</a></li>
+                  <li class="pb-3"><span class="me-2 px-3"><i class="bi bi-calendar"></i></span><a href="#calendar">calendar</a></li>
+                  <li class="my-4">
+                    <hr class="dropdown-divider"/>
+                </li>
+                <li><div class="text-muted fw-bold text-uppercase small px-4  pt-3 pb-5">info</div></li>
+                <li class="pb-3"><span class="me-2 px-3"><i class="bi bi-envelope-open-fill"></i></span><a href="#">e-mail</a></li>
+                <li class="pb-3"><span class="me-2 px-3"><i class="bi bi-person-badge"></i></span><a href="#">profile</a></li>
+
+
+            </ul>
+
+          </nav>
+          </div>
+      </div>
+      <!--main-->
+      <main class="mt-5 pt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="fw-bold fs-3 text-uppercase mt-3 text-center p-2">welcome to my dashboard!</p></div>
+            </div>
+            <div class="row mb-3">
+            <div class="col-md-3">
+                <div class="card card-1 bg-c-blue mb-3">
+                    <div class="card-block p-3">
+                      <h6 class="m-b-20 p-1">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-cart-plus f-right pe-1"></i><span class="text-muted small">486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                          </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-2 bg-c-pink mb-3">
+                    <div class="card-block p-3">
+                      <h6 class="m-b-20 p-1">user visits</h6>
+                      <h2 class="text-right"><i class="fa fa-refresh f-right"></i><span class="text-muted small">150</span></h2>
+                    <p class="m-b-0">User daily visits<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3 bg-c-green card-1">
+                    <div class="card-block p-3">
+                      <h6 class="m-b-20">sales income</h6>
+                    <h2 class="text-right"><i class="fa fa-rocket f-right"></i><span class="text-muted small">486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card  mb-3 card-1  bg-c-yellow">
+                    <div class="card-block p-3">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-credit-card f-right"></i><span class="text-muted small">486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+            </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                        <p>charts</p>
+                        <div class="card-body">
+                            <canvas class="chart" width="400" height="200" id="myChart"></canvas>
+                        </div></div></div></div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                        <p>charts</p>
+                        <div class="card-body">
+                            <canvas class="chart" width="400" height="200" id="chart"></canvas></div></div>
+                    </div></div></div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <div class="card table-card">
+                                <div class="card-header">
+                               <p class="text-center">data tables</p>
+                                </div>
+                                <div class="card-body">
+                         <div class="table-responsive">
+                            <table class="table table-borderless p-3">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">application</th>
+                                    <th scope="col">sales</th>
+                                    <th scope="col">AVG</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>plants-shop</td>
+                                        <td>50$</td>
+                                        <td>5$</td>
+                                        <td>150$</td>
+                
+                                      </tr>
+                                      <tr>
+                                        <td>quiz-app</td>
+                                        <td>50$</td>
+                                        <td>5$</td>
+                                        <td>150$</td>
+                
+                                      </tr>
+                                      <tr>
+                                        <td>To-do list</td>
+                                        <td>50$</td>
+                                        <td>5$</td>
+                                        <td>150$</td>
+                
+                                      </tr>
+                                      <tr>
+                                        <td>landing page</td>
+                                        <td>50$</td>
+                                        <td>5$</td>
+                                        <td>150$</td>
+                
+                                      </tr>
+                                </tbody>
+                
+                            </table>
+                         </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+  <div class="row mt-2">
+                        <div class="col-md-12">
+                            <div class="card calendar-card">
+                                <div class="card-header">
+                                  <p class="text-center"> calendar</p> 
+                                </div>
+                                <div class="card-body">
+                            <div id="calendar" class="calendar">
+                                <div class="header mb-2 pb-2 ms-3">
+                                 <div class="month"></div>
+                                 <div class="btns">
+                                   <div class="btn btn-today">
+                                     <i class="fa-regular fa-calendar-days"></i>
+                                   </div>
+                                   <div class="btn btn-prev">
+                                   <i class="fa-solid fa-chevron-left"></i>
+                                 </div>
+                                 <div class="btn btn-next">
+                                   <i class="fa-solid fa-chevron-right"></i>
+                                 </div>
+                                 </div>
+                                </div>
+                                <div class="weekdays">
+                                 <div class="day">sun</div>
+                                 <div class="day">mon</div>
+                                 <div class="day">tus</div>
+                                 <div class="day">wed</div>
+                                 <div class="day">thu</div>
+                                 <div class="day">fri</div>
+                                 <div class="day">sat</div></div><div class="days"></div>
+                                </div>
+                       </div>
+                        </div>
+                    </div>
+      </div>
+      <div class="row mt-3 mb-2">
+          <div class="col-md-6">
+               <div class="card user-card">
+         <div class="card-header">
+            <p class="text-center">user activity</p>
+                </div>
+                <div class="card-body">
+                  <ul class="useractivity">
+              <li class="fw-bold text-capitalize pb-2"><img src="icon.png" class="me-2"/>
+        This paragraph contains a lot of lines in the source code, but the browser ignores it.</li>
+        <li class="fw-bold text-capitalize pb-2"><img src="icon2.png" class="me-2"/>
+          This paragraph contains a lot of lines in the source code, but the browser ignores it.</li>
+          <li class="fw-bold text-capitalize"><img src="icon3.jpeg" class="me-2"/>
+            This paragraph contains a lot of lines in the source code, but the browser ignores it.</li>
+            <li class="text-center pt-3"><a href="#" class="nav-link">view more</a></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+        <div class="col-md-6">
+          <div class="card customer-card">
+            <div class="card-header">
+              <p>new customers</p>
+            </div>
+           <div class="card-body">
+            <table class="table  user-list">
+              <tbody>
+                <tr>
+                  <td><img src="icon2.png"/><span class="user-link">aya mahdy</span>
+                <span class="user-subhead">graphic designer</span></td> 
+                <td><i class="bi bi-envelope-fill"></i></td>  
+                <td><i class="bi bi-trash"></i></td>
+                </tr>
+                <tr>
+                  <td ><img src="icon.png"><span class="user-link">mohamed</span>
+                    <span class="user-subhead">full-stack developer</span>
+                  </td>
+                  <td><i class="bi bi-envelope-fill"></i></td>  
+                <td><i class="bi bi-trash"></i></td>
+                </tr>
+                <tr>
+                  <td ><img src="icon3.jpeg"><span class="user-link">rana ahmed</span>
+                    <span class="user-subhead">react js developer</span>
+                  </td>
+                  <td><i class="bi bi-envelope-fill"></i></td>  
+                <td><i class="bi bi-trash"></i></td>
+                </tr>
+                <tr>
+                  <td ><img src="icon.png"><span class="user-link">ahmed soliman</span>
+                    <span class="user-subhead">sales manager</span>
+                  </td>
+                  <td><i class="bi bi-envelope-fill"></i></td>  
+                <td><i class="bi bi-trash"></i></td>
+                </tr>
+    
+              </tbody>
+
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="d-flex text-center pt-4 foot-sec">
+                <li class="pe-5"><a href="#" class="foot-link">dashboard</a></li>
+                <li class="pe-5"><a href="#" class="foot-link">help</a></li>
+                <li class="pe-5"><a href="#" class="foot-link">license</a></li>
+                <div class="copy-rights ms-auto pe-3">
+                  <p>made with <i class="bi bi-heart-fill pe-1"></i> by <span class="pe-1">&COPY;aya mahdy</span>2024</p>
+                </div>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+    <script type="module" src="main.js"></script>    
+</body>
+</html>
